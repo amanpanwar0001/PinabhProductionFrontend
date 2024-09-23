@@ -11,7 +11,7 @@ const About_section2 = () => {
         <div className="row gy-4">
           <div className="col-lg-6 order-1 order-lg-2">
             <img
-              src="./src/images/img2.jpg"
+              src="images/img2.jpg"
               className="img-fluid about-img"
               alt=""
             />

@@ -23,7 +23,7 @@ const Navbar = () => {
             <nav>
                   
                   <div className="logo">
-                  <img src="../src/images/changeLogo.png" alt="pph" />  
+                  <img src="images/changeLogo.png" alt="pph" />  
             <pre className='pinabh'>
               {" "}
               <span className="title">Pinabh</span> <span id='middle'>Production</span>{" "}

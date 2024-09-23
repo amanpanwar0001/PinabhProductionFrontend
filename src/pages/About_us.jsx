@@ -13,7 +13,7 @@ const About_us = () => {
         </div>
         <div className="content1">
         <div className="right">
-            <img src="src/images/img1.jpg" alt="" />
+            <img src="images/img1.jpg" alt="" />
           </div>
           <div className="left">
             <p>
@@ -55,7 +55,7 @@ const About_us = () => {
             <br />
           </div>
           <div className="left2">
-            <img src="src/images/img2.jpg" alt="" />
+            <img src="images/img2.jpg" alt="" />
           </div>
         </div>
         <Footer/>

@@ -12,7 +12,7 @@ const Services = () => {
     <>
     {/* <Navbar /> */}
       <img
-        src="./src/images/simg2.jpg"
+        src="images/simg2.jpg"
         alt=""
         style={{
           opacity: "40%",

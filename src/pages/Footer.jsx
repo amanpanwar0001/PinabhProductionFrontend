@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           <div className="col-sm-4 col-md col-12 logo pt-5">
-           <img  src="../src/images/changeLogo.png" alt="pph img" />
+           <img  src="/images/changeLogo.png" alt="pph img" />
           </div>
         </div>
       </div>

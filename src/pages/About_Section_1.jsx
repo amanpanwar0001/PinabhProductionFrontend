@@ -23,7 +23,7 @@ const About_Section_1 = () => {
       </div>
       <div>
         <section id="hero" className="hero section">
-          <img src="./src/images/img1.jpg" alt="img" data-aos="fade-in" />
+          <img src="images/img1.jpg" alt="img" data-aos="fade-in" />
 
           <div className="container">
             <div className="row">
@@ -36,7 +36,7 @@ const About_Section_1 = () => {
                 </p>
               </div>
               <div className="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
-                <a href="./src/videos/youtube-video.mp4" className="glightbox pulsating-play-btn"></a>
+                <a href="videos/youtube-video.mp4" className="glightbox pulsating-play-btn"></a>
               </div>
             </div>
           </div>

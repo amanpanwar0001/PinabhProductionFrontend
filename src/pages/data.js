@@ -3,7 +3,7 @@
         id: 1,
         smallDescription:" From concept development to final cut, we handle every  From concept development to final cut, we handle every aspect of feature film production. Our services include scriptwriting, casting, location scouting, set design,  shooting, editing, and post-production. We ensure that every detail meets the highest standards of quality and creativity.",
         title: "Feature film production",
-        imagesrc:"./src/images/simg.jpg",
+        imagesrc:"images/simg.jpg",
         headdescription:"Service Details for Feature Film Production by Pinabh Production House",
         title1:"1. Pre-Production",
         subtitle1:`Concept Development: Assist in developing the story, script, and screenplay.
@@ -48,7 +48,7 @@ Website:www.pinabhfilms.com`
         id: 2,
         smallDescription:"   We specialize in creating engaging TV serials and web series tha captivate audiences. Our process covers everything fromstoryboarding and scriptwriting to casting, shooting, and post-production. We work closely with you to ensure your visiontranslates into compelling and entertaining content.",
         title: "Tv serials and Web series",
-        imagesrc:"./src/images/simg7.jpg",
+        imagesrc:"images/simg7.jpg",
         headdescription:"Service Details for Producing TV Serials and Web Series by Pinabh Production House",
         title1:"1. Pre-Production",
         subtitle1:`Concept Development: Collaborate on creating and refining story ideas for TV serials and web series.
@@ -89,7 +89,7 @@ Post-Release Support: Offer ongoing support and address any issues or additional
         smallDescription:" Enhance your brand’s presence with professionally produced corporate videos and commercials. We offer scriptwriting, shooting, and editing services to create impactful content that communicates yourmessage effectively and aligns with your brand identity. ",
         title: "Corporate and Commercial videos",
 
-        imagesrc:'./src/images/simg3.jpg',
+        imagesrc:'images/simg3.jpg',
         headdescription:"Service Details for Corporate Videos and Commercials by Pinabh Production House",
         title1:"1. Pre-Production",
         subtitle1:`Concept Development: Work with clients to develop creative concepts and messages tailored to corporate branding or advertising goals.
@@ -130,7 +130,7 @@ We look forward to helping you create impactful and effective corporate videos a
         id: 4,
         smallDescription:"  Our team brings artistic flair and technical expertise to music video production. We handle concept development, location scouting,shooting, and editing to create visually stunning videos thatcomplement your music and resonate with your audience.",
         title: "Music videos",
-        imagesrc:'./src/images/simg4.jpg',
+        imagesrc:'images/simg4.jpg',
         headdescription:"Service Details for Music Videos by Pinabh Production House",
         title1:"1. Pre-Production",
         subtitle1:`
@@ -175,7 +175,7 @@ We’re excited to help you bring your music video vision to life!`
         id: 5,
         smallDescription:"   We produce insightful and engaging documentaries that tellcompelling stories. Our services include research, scriptwriting,filming, and editing, ensuring your documentary is both informative and visually appealing.",
         title: "Documentry Production",
-        imagesrc:'./src/images/simg5.jpg',
+        imagesrc:'images/simg5.jpg',
         headdescription:"Service Details for Documentary Production by Pinabh Production House",
         title1:"1. Pre-Production",
         subtitle1:`
@@ -221,7 +221,7 @@ We look forward to partnering with you to bring your documentary vision`
         id: 6,
         smallDescription:"    Our post-production services include editing, sound design, visual effects, and color correction. We use state-of-the-art technology toenhance your content and deliver a polished final product that meetsindustry standards.",
         title: "Post production Services",
-        imagesrc:'./src/images/simg6.jpg',
+        imagesrc:'images/simg6.jpg',
         headdescription:"Service Details for Post-Production Services by Pinabh Production House",
         title1:"1. Editing",
         subtitle1:`
@@ -264,7 +264,7 @@ Contact Information: To inquire about our post-production services or to discuss
         id: 7,
         smallDescription:"   Our talented scriptwriters and story developers help bring your ideas to life with engaging scripts and well-structured narratives. We collaborate with you to craft stories that captivate and resonate with your target audience. ",
         title: " Script Writting and Story development",
-        imagesrc:'./src/images/simg8.jpg',
+        imagesrc:'images/simg8.jpg',
         headdescription:"Service Details for Scriptwriting and Story Development by Pinabh Production House",
         title1:"1. Initial Consultation and Concept Development",
         subtitle1:`Client Consultation: Engage in detailed discussions with clients to understand their vision, objectives, and target audience for the project.
@@ -299,7 +299,7 @@ Contact Information: To discuss your scriptwriting or story development needs, p
         id: 8,
         smallDescription:"  We offer location scouting and set design services to createvisually striking and functional environments for your shoot. Ourteam ensures that every location and set aligns with your creative vision and production requirements.",
         title: "Location scouting and set design",
-        imagesrc:'./src/images/simg10.jpg',
+        imagesrc:'images/simg10.jpg',
         headdescription:"Service Details for Location Scouting and Set Design by Pinabh Production House",
         title1:"1. Location Scouting",
         subtitle1:`

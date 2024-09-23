@@ -9,31 +9,31 @@ const Projects = () => {
   const slides = [
     {
       heading: "Meharbaan",
-      imgSrc: "src/images/poster1.jpg",
+      imgSrc: "images/poster1.jpg",
       para: "Hindi feature film",
       description: "Romantic",
     },
     {
       heading: "Baat Ban jaye",
-      imgSrc: "src/images/poster2.jpg",
+      imgSrc: "images/poster2.jpg",
       para: "Hindi feature film",
       description: "RomCom",
     },
     {
       heading: "Pyasa",
-      imgSrc: "src/images/proimg3.jpg",
+      imgSrc: "images/proimg3.jpg",
       para: "Web Series",
       description: "Thriller",
     },
     {
       heading: "Three Roses",
-      imgSrc: "src/images/proimg4.jpg",
+      imgSrc: "images/proimg4.jpg",
       para: "Album",
       description: "Romantic",
     },
     {
       heading: "Jai Laxmi Ma",
-      imgSrc: "src/images/proimg5.jpg",
+      imgSrc: "images/proimg5.jpg",
       para: "",
       description: "Devotional",
     },
@@ -81,7 +81,7 @@ const Projects = () => {
   return (
     <>
       <img
-        src="./src/images/contact1bg.jpg"
+        src="images/contact1bg.jpg"
         alt=""
         style={{
           opacity: "30%",
