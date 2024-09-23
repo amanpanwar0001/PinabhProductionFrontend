@@ -1,0 +1,16 @@
+  .carousel-item img{
+      height: 100vh;
+      object-fit: cover;
+      background: none;
+
+}
+ 
+.text{
+ color: rgba(229,9,20,255);
+ font-weight: 500;
+} 
+
+  
+
+ 
+     

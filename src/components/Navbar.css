@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.553);
+    position: fixed;
+    z-index: 10;
+    /* opacity: 50%; */
+    width: 100vw;
+}
+
+.containers {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 1rem; 
+    margin: 0 auto; 
+}
+
+.containers nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containers nav .logo {
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    transform: translateX(-12px);
+
+}
+
+.logo pre {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.title {
+    color: white;
+}
+.pinabh1{
+    display: none;
+}
+
+#middle {
+    color: rgba(229,9,20,255);
+}
+
+.containers .nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.containers .nav-link li {
+    list-style: none;
+    margin: 0 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containers ul li a {
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: color 0.3s, border-bottom 0.3s; 
+}
+
+.containers ul li a:not(.active):hover {
+    color: rgba(229,9,20,255);
+    border-bottom: 2px solid rgba(229,9,20,255);
+}
+
+.containers ul li a:focus {
+    color: rgba(229,9,20,255);
+    border-bottom: 2px solid rgba(229,9,20,255);
+}
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; 
+}
+
+
+@media (max-width: 768px) {
+    .icon {
+        display: block; 
+    }
+
+    .containers .nav-link {
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: black;
+        position: absolute;
+        width: 250px;
+        height: 60vh;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        transform: translateX(100%); 
+        transition: transform 0.3s; 
+    }
+
+    .nav-link.active {
+        transform: translateX(0); 
+    }
+
+    .containers .nav-link li {
+        margin: 0.5rem 0; 
+    }
+    .pinabh{
+        display: none;
+    }
+    .pinabh1{
+        display: block;
+    }
+}
+
+
+ 

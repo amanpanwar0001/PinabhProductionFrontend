@@ -1,0 +1,43 @@
+.dashboard{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color:#212121 ;
+      height: 78vh;
+      gap:100px;
+
+}
+.head{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      background-color:#212121 ;
+      padding-top: 100px;
+
+}
+#bt:hover{
+      background-color: red;
+}
+
+.Newsroom {
+      width: 500px;
+      height: 400px;
+      /* padding-top: 300px; */
+
+      border-radius: 30px;
+      background: #212121;
+      box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                  -15px -15px 30px rgb(60, 60, 60);
+     }
+
+     .Moviezone{
+      width: 500px;
+      height: 400px;
+
+      border-radius: 30px;
+      background: #212121;
+      box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                  -15px -15px 30px rgb(60, 60, 60);
+     }

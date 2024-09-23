@@ -1,0 +1,221 @@
+.SET{
+      background-color:#212121 ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+      padding-top: 150px;
+      
+}
+
+ 
+
+.set{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap:50px;
+
+}
+
+.set .seta{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      
+      backface-visibility: hidden;
+      padding: 65px 45px;
+      border-radius: 15px;
+      box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.set .seta .imagesection{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+}
+
+.set .setb .videosection{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+}
+
+.set .setb{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      
+      backface-visibility: hidden;
+      padding: 65px 45px;
+      border-radius: 15px;
+      box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+}
+
+.setcard{
+      display: flex;
+      flex-wrap: wrap;
+      
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 50px;
+      
+      backface-visibility: hidden;
+      padding: 65px 45px;
+      /* border-radius: 15px;
+      box-shadow: inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6); */
+
+      border-radius: 30px;
+      background: #212121;
+      box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                  -15px -15px 30px rgb(60, 60, 60);
+
+}
+
+
+.btnv {
+      padding: 10px 35px;
+      cursor: pointer;
+      background-color: #212121;
+      border-radius: 6px;
+      border: 2px solid #212121;
+      box-shadow: 6px 6px 10px rgba(0,0,0,1),
+      1px 1px 10px rgba(255, 255, 255, 0.6);
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      transition: 0.35s;
+    }
+    
+    .btnv:hover {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 10px rgba(0,0,0,1),
+      1px 1px 10px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+      background-color: red;
+    }
+    
+    .btnv:focus {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 10px rgba(0,0,0,1),
+      1px 1px 10px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+    }
+
+
+    .inputv {
+      width: 245px;
+      min-height: 45px;
+      color: #fff;
+      outline: none;
+      transition: 0.35s;
+      padding: 0px 7px;
+      background-color: #212121;
+      border-radius: 6px;
+      border: 2px solid #212121;
+      box-shadow: 6px 6px 10px rgba(0,0,0,1),
+      1px 1px 10px rgba(255, 255, 255, 0.6);
+    }
+    
+    .inputv::placeholder {
+      color: #999;
+    }
+    
+    .inputv:focus.inputv::placeholder {
+      transition: 0.3s;
+      opacity: 0;
+    }
+    
+    .inputv:focus {
+      transform: scale(1.05);
+      box-shadow: 6px 6px 10px rgba(0,0,0,1),
+      1px 1px 10px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 10px rgba(0,0,0,1),
+      inset -1px -1px 5px rgba(255, 255, 255, 0.6);
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust layout for smaller screens like tablets and phones */
+      .SET {
+        padding-top: 50px; /* Reduced padding for mobile */
+        gap: 20px; /* Reduce gap for mobile */
+      }
+      .SET h1{
+            padding-top: 100px;
+      }
+    
+      .set {
+        gap: 20px; /* Reduce the gap between items */
+        flex-direction: column; /* Stack elements vertically */
+      }
+    
+      .set .seta, .set .setb {
+        padding: 30px 20px; /* Reduce padding on mobile */
+        box-shadow: inset 1px 1px 5px rgba(0,0,0,1), inset -1px -1px 3px rgba(255, 255, 255, 0.6);
+      }
+    
+      .set .imagesection, .set .videosection {
+        gap: 20px; /* Reduce gap between items */
+      }
+    
+      .setcard {
+        margin: 20px; /* Reduce margins on mobile */
+        padding: 30px 20px; /* Reduce padding */
+      }
+    
+      .inputv {
+        width: 100%; /* Input fields take full width */
+      }
+    
+      .btnv {
+        width: 100%; /* Buttons take full width */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      /* Adjust layout for smaller phone screens */
+      .SET {
+        padding-top: 30px; /* Further reduce padding */
+        gap: 15px;
+      }
+    
+      .set {
+        gap: 15px; /* Reduce gap further for small screens */
+      }
+    
+      .set .seta, .set .setb {
+        padding: 20px 15px; /* Adjust padding */
+      }
+    
+      .setcard {
+        margin: 15px; /* Reduce margins further */
+        padding: 20px 15px;
+      }
+    
+      .inputv {
+        width: 100%; /* Full width input fields */
+      }
+    
+      .btnv {
+        width: 100%; /* Full width buttons */
+      }
+    }
+    

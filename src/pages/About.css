@@ -1,0 +1,113 @@
+
+body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+    
+    .top {
+      text-align: center;
+      padding-top: 90px;
+    }
+    
+    .top h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+      text-decoration-color: rgba(229, 9, 20, 255);
+      text-underline-offset: 10px;
+    }
+    
+    span {
+      color: rgba(229, 9, 20, 255);
+    }
+    
+    .background-image {
+      background-image: url("src/images/con2.jpg");
+      height:200vh;
+      width: 100vw;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7;
+    }
+    
+    .content1, .content2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      margin-top: 50px;
+      gap:30px;
+      background-image: url("src/images/con4.jpg");
+    }
+    
+    .left,.right2 {
+      background-color: rgb(9, 9, 28);
+      padding: 20px;
+      text-align: center;
+       border: 1.5px solid white; 
+       text-align:justify;
+      box-sizing: border-box; 
+    }
+    
+    .left, .right, .left2, .right2 {
+      height: auto; 
+      width: 45vw;
+      font-size: large;
+      letter-spacing: 1px;
+      transition: transform 0.5s ease;
+      margin: 10px; 
+    }
+    
+    .left:hover, .right img:hover, .left2 img:hover, .right2:hover {
+      transform: scale(1.05);
+    }
+    .right, .left2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      width: 625px;
+      background-image: url('./src/images/imagesbg.jpeg');
+    }
+    
+    .right img, .left2 img {
+      width: 82%;
+      height: 322px; 
+      border-radius: 40px;
+      transition: transform 0.5s ease;
+    }
+    
+    @media (max-width: 768px) {
+      .top {
+        padding-top: 90px; 
+      }
+    
+      .background-image {
+        height: 200vh; 
+      }
+    
+      .content1, .content2 {
+        flex-direction: column; 
+        align-items: center;
+      }
+    
+      .left, .right, .left2, .right2 {
+        width: 90vw;  
+        margin: 10px 0;  
+      }
+    
+      .right img, .left2 img {
+        width: 100%;
+        height: auto; 
+      }
+      .right , .left2{
+        width: 100%;
+        height: auto; 
+        border-radius: 40px;
+      }
+    
+      .left:hover, .right img:hover, .left2 img:hover, .right2:hover {
+        transform: scale(1.02); 
+      }
+    }
+      

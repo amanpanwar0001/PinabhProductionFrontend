@@ -1,0 +1,102 @@
+ 
+.containerZ {
+      display: flex;
+      flex-direction: column;  
+      align-items: center;  
+      padding: 20px; 
+      box-sizing: border-box; 
+      background-image: url('/src/images/simg2.jpg');
+      /* opacity: 30%; */
+      /* height: 100vh; */
+      /* width: 100vw; */
+      /* position: fixed; */
+      object-fit: cover;
+  }
+  
+  .containerZ h1 {
+      text-align: center;
+      margin-top: 150px;  
+      color: red;
+      font-size: 2em; 
+  }
+  
+  .description {
+      margin-top: 20px;  
+      max-width: 800px;  
+      /* background-color: rgb(83, 81, 81); */
+      padding: 40px;
+      color: #fff; 
+      text-align: left; 
+   }
+  /* #AB{
+     
+    padding: 12px;
+    border-radius: 15px;
+    margin-left: 270px;
+    cursor: pointer;
+  }
+  #AB:hover{
+    background-color: red;
+  }  */
+    /* Default Styles for larger screens */
+#AB {
+    padding: 12px;
+    border-radius: 15px;
+    margin-left: 270px; /* Adjust this as needed for your layout */
+    cursor: pointer;
+    background-color: #f0f0f0; /* Set a default background color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#AB:hover {
+    background-color: red; /* Change background color on hover */
+}
+
+/* Responsive Styles for mobile screens */
+@media (max-width: 768px) { /* Target screens smaller than 768px (tablet and mobile) */
+    #AB {
+        margin-left: 10px; /* Reduce left margin */
+        margin-right: 10px; /* Add right margin for better alignment */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Optional: adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Target screens smaller than 480px (mobile) */
+    #AB {
+        margin-left: 5px; /* Further reduce left margin for very small screens */
+        margin-right: 5px; /* Further adjust right margin */
+        padding: 8px; /* Reduce padding for very small screens */
+        font-size: 12px; /* Optional: adjust font size for very small screens */
+    }
+}
+
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .containerZ h1 {
+          font-size: 1.5em;
+          margin-top: 100px; 
+      }
+  
+      .description {
+          padding: 20px; 
+          margin-top: 10px; 
+          max-width: 100%; 
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .containerZ h1 {
+          font-size: 1.2em; 
+          margin-top: 60px; 
+      }
+  
+      .description {
+          padding: 10px; 
+          margin-top: 5p;
+          max-width: 100;
+          font-size: 0.9em; 
+      }
+  }
+  

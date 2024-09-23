@@ -1,0 +1,92 @@
+ .containerA{
+	padding: 30px;
+ }
+
+.containerA p {
+	font-size: 50px;
+	 
+    }
+    
+    .containerA h2 {
+	color: red;
+    }
+    .contactA {
+	background-color: black;
+	
+	width: 100vw;
+	color: white;
+	padding-top: 100px;
+	/* text-align: center; */
+    }
+    #txt{
+	text-align: center;
+    }
+    .contactA .info-item + .info-item {
+	margin-top: 40px;
+	color: white;
+    }
+    
+    .contactA .info-item i {
+	color: white;
+	background: red;
+	font-size: 20px;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	margin-right: 15px;
+    }
+    
+    .contactA .info-item h3 {
+	padding: 0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 5px;
+    }
+    
+    .contactA .info-item p {
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+    }
+    
+    .contactA .email-form {
+	height: 100%;
+    }
+    
+    .contactA .email-form input[type="text"],
+    .contactA .email-form input[type="email"],
+    .contactA .email-form textarea {
+	font-size: 14px;
+	padding: 10px 15px;
+	box-shadow: none;
+	border-radius: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);  /* Adjusted for clarity */
+	border-color: white;  /* Adjusted for clarity */
+    }
+    
+    .contactA .email-form input[type="text"]:focus,
+    .contactA .email-form input[type="email"]:focus,
+    .contactA .email-form textarea:focus {
+	border-color: white;
+    }
+    
+    .contactA .email-form input[type="text"]::placeholder,
+    .contactA .email-form input[type="email"]::placeholder,
+    .contactA .email-form textarea::placeholder {
+	color: white;  /* Adjusted for clarity */
+    }
+    
+    .contactA .email-form button[type="submit"]:hover {
+	background: red;
+    }
+    .btn{
+	padding: 10px;
+	border: 1px solid white;
+	color: white;
+    }
+    

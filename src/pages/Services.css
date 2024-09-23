@@ -1,0 +1,116 @@
+
+ .card .i { 
+      font-size: 4rem; 
+      color: red; 
+      text-align: left; 
+    } 
+     
+    .card-tex { 
+      color: white; 
+      text-align: left; 
+      font-size: larger; 
+    } 
+     
+    .card { 
+      transition: all 0.5s; 
+      background-color: transparent; 
+      color: white; 
+      width: 75rem; 
+      display: flex; 
+      gap: 80px; 
+      justify-content: space-evenly; 
+      flex-direction: row; 
+    } 
+     
+    .card:hover { 
+      background-color: rgba(0, 0, 0, 0.63); 
+      color: white; 
+    } 
+     
+    .card:hover .i { 
+      color: red; 
+    } 
+     
+    .card:hover .card-tex { 
+      color: white; 
+    } 
+     
+    .card-body { 
+      width: 400px; 
+    } 
+     
+    .custom-video { 
+      border: 2px solid rgb(201, 12, 12); 
+      height: 200px; 
+      width: 200px; 
+      overflow: hidden; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+    } 
+     
+    .video-style { 
+      object-fit: cover; 
+      height: 100%; 
+      width: 100%; 
+      border-radius: inherit; 
+    } 
+     
+    /* Media Queries for Tablet and Mobile Devices */ 
+     
+    /* Tablet Screens (max-width: 768px) */ 
+    @media (max-width: 768px) { 
+      .card { 
+        flex-direction: column; 
+        width: 90%; /* Reduce card width */ 
+        gap: 40px; /* Reduce gap between elements */ 
+      } 
+     
+      .card-body { 
+        width: 100%; /* Full width on smaller screens */ 
+      } 
+     
+      .card .i { 
+        font-size: 2.5rem; /* Reduce font size for icons */ 
+        text-align: center; /* Center the icons */ 
+      } 
+     
+      .card-tex { 
+        font-size: 1.2rem; /* Reduce text size */ 
+        text-align: center; /* Center the text */ 
+      } 
+     
+      .custom-video { 
+        height: 150px; /* Reduce video size */ 
+        width: 150px; 
+      } 
+    } 
+     
+    /* Mobile Screens (max-width: 480px) */ 
+    @media (max-width: 480px) { 
+      .card { 
+        flex-direction: column; 
+        width: 100%; /* Full width on mobile */ 
+        gap: 20px; /* Reduce gap for mobile screens */ 
+      } 
+     
+      .card-body { 
+        width: 100%; /* Full width for mobile */ 
+        padding: 10px; /* Reduce padding */ 
+      } 
+     
+      .card .i { 
+        font-size: 2rem; /* Further reduce font size */ 
+        text-align: center; 
+      } 
+     
+      .card-tex { 
+        font-size: 1rem; /* Smaller text for mobile */ 
+        text-align: center; 
+      } 
+     
+      .custom-video { 
+        height: 120px; /* Further reduce video size */ 
+        width: 120px; 
+      } 
+    }
