@@ -13,10 +13,10 @@ const Videolist = () => {
     try {
       // Fetch images and videos from the correct endpoints
       const imageResponse = await axios.get(
-        "http://localhost:5001/api/media/images"
+        "https://pinabh-productionbackend.onrender.com/api/media/images"
       );
       const videoResponse = await axios.get(
-        "http://localhost:5001/api/media/videos"
+        "https://pinabh-productionbackend.onrender.com/api/media/videos"
       );
       setMedia({ images: imageResponse.data, videos: videoResponse.data });
     } catch (error) {

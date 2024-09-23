@@ -53,7 +53,7 @@ const Videos = () => {
     const formData = new FormData();
     formData.append('video', video);
     try {
-      await axios.post('http://localhost:5001/api/upload/video', formData);
+      await axios.post('https://pinabh-productionbackend.onrender.com/api/upload/video', formData);
       setUploadResult('Video uploaded');
       fetchMedia(); // Refresh the media list
       setVideo(null); // Reset the video input
@@ -67,7 +67,7 @@ const Videos = () => {
 
   const handleDeleteMedia = async (url) => {
     const isImage = url.includes('/images/');
-    const endpoint = isImage ? 'http://localhost:5001/api/delete/image' : 'http://localhost:5001/api/delete/video';
+    const endpoint = isImage ? 'https://pinabh-productionbackend.onrender.com/api/delete/image' : 'https://pinabh-productionbackend.onrender.com/api/delete/video';
   
     console.log("Deleting URL:", url);
     

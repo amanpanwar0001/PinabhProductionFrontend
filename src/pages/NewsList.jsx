@@ -13,7 +13,7 @@ const NewsList = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/api/news');
+      const response = await axios.get('https://pinabh-productionbackend.onrender.com/api/news');
       setNewsItems(response.data);
     } catch (error) {
       console.error('Error fetching news:', error);
