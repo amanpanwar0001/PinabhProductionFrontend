@@ -40,6 +40,8 @@
   padding: 14px 25px;
   border-radius: 14px;
   color: #fff;
+  /* color: gold; */
+
   z-index: 3;
   position: relative;
   background: radial-gradient(circle 80px at 80% -50%, #777777, #0f1111);
@@ -63,13 +65,13 @@
 
 .ru { 
   text-align: center;
-  color: white;
+  color: gold;
   text-transform: uppercase;
   padding: 1px;
   margin: 50px;
   font-weight: 100;
   position: relative;
-  background: linear-gradient(to right, black, #eee, black);
+  background: linear-gradient(to right, black, red, black);
 }
 
 .ru a {
@@ -77,6 +79,9 @@
   display: block;
   padding: 20px;
   text-decoration: none;
-  letter-spacing: 30px;
+  letter-spacing: 10px;
   color: white;
+  /* color: gold; */
+
+  font-size: 25px;
 }

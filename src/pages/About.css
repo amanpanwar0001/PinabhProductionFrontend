@@ -22,7 +22,7 @@ body {
     }
     
     .background-image {
-      background-image: url("images/con2.jpg");
+      /* background-image: url("images/con2.jpg"); */
       height:200vh;
       width: 100vw;
       background-size: cover;
@@ -37,11 +37,11 @@ body {
       padding: 20px;
       margin-top: 50px;
       gap:30px;
-      background-image: url("images/con4.jpg");
+      /* background-image: url("images/con4.jpg"); */
     }
     
     .left,.right2 {
-      background-color: rgb(9, 9, 28);
+      /* background-color: rgb(9, 9, 28); */
       padding: 20px;
       text-align: center;
        border: 1.5px solid white; 
@@ -67,7 +67,7 @@ body {
       align-items: center;
       height: 500px;
       width: 625px;
-      background-image: url('images/imagesbg.jpeg');
+      background-image: url('/images/imagesbg.jpeg');
     }
     
     .right img, .left2 img {

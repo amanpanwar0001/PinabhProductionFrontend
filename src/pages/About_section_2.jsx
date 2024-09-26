@@ -19,20 +19,20 @@ const About_section2 = () => {
             />
           </div>
           <div className="col-lg-6 order-2 order-lg-1 content">
-            <h3>Welcome to the world of endless storytelling!
+            <h3 style={{color:"red"}}>Welcome to the world of endless storytelling!
             </h3>
             <p className="fst-italic">
             At Pinabh Production House, we are passionate about bringing stories to life. Whether you're a film enthusiast, a web series buff, or someone who loves TV dramas, you've come to the right place. 
             </p>
             <ul>
               <li>
-                <i className="bi bi-check2-all"></i> <span>Our team is dedicated to creating high-quality content that captivates audiences worldwide. Dive into our latest projects,</span>
+                <i className="bi "></i> <span style={{color:"white"}}>Our team is dedicated to creating high-quality content that captivates audiences worldwide. Dive into our latest projects,</span>
               </li>
               <li>
-                <i className="bi bi-check2-all"></i> <span> explore behind-the-scenes magic,</span>
+                <i className="bi "></i> <span style={{color:"white"}}> explore behind-the-scenes magic,</span>
               </li>
               <li>
-                <i className="bi bi-check2-all"></i> <span>and join us on a creative journey where imagination knows no bounds. Ready to be a part of something extraordinary? Whether you're looking to collaborate, get inspired,</span>
+                <i className="bi "></i> <span style={{color:"white"}}>and join us on a creative journey where imagination knows no bounds. Ready to be a part of something extraordinary? Whether you're looking to collaborate, get inspired,</span>
               </li>
             </ul>
             <p>

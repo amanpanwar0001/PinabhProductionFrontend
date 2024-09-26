@@ -7,7 +7,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{padding:"30px"}}>
       <div className="container bottom_border">
         <div className="row">
           <div className="col-sm-4 col-md col-12">
@@ -29,12 +29,12 @@ const Footer = () => {
           <div className="col-sm-4 col-md col-6">
             <h5 className="headin5_amrc col_white_amrc pt2">Company</h5>
             <ul className="footer_ul_amrc">
-              <li><a href="http://webenlance.com">About PPH</a></li>
-              <li><a href="http://webenlance.com">Carerrs</a></li>
-              <li><a href="http://webenlance.com">Advertising</a></li>
-              <li><a href="http://webenlance.com">Help/Faqs</a></li>
-              <li><a href="http://webenlance.com">Newsroom</a></li>
-              <li><a href="http://webenlance.com">Privacy & Policy</a></li>
+              <li><a href=" ">About PPH</a></li>
+              <li><a href=" ">Carerrs</a></li>
+              <li><a href=" ">Advertising</a></li>
+              <li><a href=" ">Help/Faqs</a></li>
+              <li><a href=" ">Newsroom</a></li>
+              <li><a href=" ">Privacy & Policy</a></li>
               <Link to="/admin">
               <li>Admin Panel</li>
               </Link>
@@ -44,16 +44,16 @@ const Footer = () => {
           <div className="col-sm-4 col-md col-6">
             <h5 className="headin5_amrc col_white_amrc pt2">Production house</h5>
             <ul className="footer_ul_amrc">
-              <li><a href="http://webenlance.com">Editing</a></li>
-              <li><a href="http://webenlance.com">Desiging</a></li>
-              <li><a href="http://webenlance.com">Projects</a></li>
-              <li><a href="http://webenlance.com">Writters</a></li>
-              <li><a href="http://webenlance.com">Music and videos</a></li>
-              <li><a href="http://webenlance.com">Castings</a></li>
+              <li><a href=" ">Editing</a></li>
+              <li><a href=" ">Desiging</a></li>
+              <li><a href=" ">Projects</a></li>
+              <li><a href=" ">Writters</a></li>
+              <li><a href=" ">Music and videos</a></li>
+              <li><a href=" ">Castings</a></li>
             </ul>
           </div>
 
-          <div className="col-sm-4 col-md col-12 logo pt-5">
+          <div className=" dj col-sm-4 col-md col-12 logo pt-5">
            <img  src="/images/changeLogo.png" alt="pph img" />
           </div>
         </div>
@@ -61,15 +61,15 @@ const Footer = () => {
 
       <div className="containerf">
         <ul className="foote_bottom_ul_amrc">
-          <li><a href="http://webenlance.com">Home</a></li>
-          <li><a href="http://webenlance.com">About</a></li>
-          <li><a href="http://webenlance.com">Services</a></li>
-          <li><a href="http://webenlance.com">Blog</a></li>
-          <li><a href="http://webenlance.com">Contact</a></li>
+          <li><a href=" ">Home</a></li>
+          <li><a href=" ">About</a></li>
+          <li><a href=" ">Services</a></li>
+          <li><a href=" ">Blog</a></li>
+          <li><a href=" ">Contact</a></li>
         </ul>
         <p className="text-center">
           Copyright @2024 |<a href="#"> Pinabh Production House Pvt. Ltd.</a><br />
-          Designed By  |<a href="#"> I Next IT Solutions Pvt. Ltd.</a>
+          Designed By  |<a href="#"> I Next IT Solutions </a>
         </p>
 
         <ul className="social_footer_ul">

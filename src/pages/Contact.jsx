@@ -57,7 +57,7 @@ const Contact = () => {
       <div>
         <section id="contact" className="contactA section">
           <div id="txt" className="containerA section-title">
-            <h2>Contact </h2>
+            <h2 style={{marginTop:"20px"}}>Contact </h2>
             <p>Contact Us</p>
           </div>
 

@@ -12,7 +12,7 @@
      /* margin: 50px; */
      font-weight: 100;
      /* position: relative; */
-     background: linear-gradient(to right, black, #eee, black);
+     background: linear-gradient(to right, black, red, black);
    }
    
    .ru1 a {
@@ -20,8 +20,9 @@
      display: block;
      padding: 20px;
      text-decoration: none;
-     letter-spacing: 30px;
+     letter-spacing: 10px;
      color: white;
+     font-size: 25px;
    }
 
 

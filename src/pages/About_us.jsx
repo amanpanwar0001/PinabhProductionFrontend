@@ -5,9 +5,21 @@ import Footer from "./Footer";
 const About_us = () => {
   return (
     <>
+      <img
+        src="images/contact1bg.jpg"
+        alt=""
+        style={{
+          opacity: "30%",
+          height: "100vh",
+          width: "100vw",
+          position: "fixed",
+          objectFit: "cover",
+          
+        }}
+      />
       <div className="background-image">
-        <div className="top">
-          <h2>
+        <div className="top" style={{marginTop:"10px"}}>
+          <h2 style={{marginTop:"50px"}}>
             Our <span>Story</span>
           </h2>
         </div>

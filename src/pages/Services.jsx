@@ -5,12 +5,10 @@ import "./Services.css";
 import Footer from "./Footer";
 import { items } from "./data";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
 const Services = () => {
   
   return (
     <>
-    {/* <Navbar /> */}
       <img
         src="images/simg2.jpg"
         alt=""

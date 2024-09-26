@@ -6,10 +6,7 @@
       padding: 20px; 
       box-sizing: border-box; 
       background-image: url('images/simg2.jpg');
-      /* opacity: 30%; */
-      /* height: 100vh; */
-      /* width: 100vw; */
-      /* position: fixed; */
+      
       object-fit: cover;
   }
   

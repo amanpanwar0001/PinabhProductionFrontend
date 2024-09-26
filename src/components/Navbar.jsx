@@ -5,6 +5,8 @@ import { ImCross } from "react-icons/im";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { RxCross2 } from "react-icons/rx";
+
 
 const Navbar = () => {
       const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,7 @@ const Navbar = () => {
                   
                   <ul className={isOpen ? "nav-link active" : "nav-link"}>
                   {/* <button onClick={handelClose} >X</button> */}
-                        <li onClick={handelClose} className='icon'><ImCross /></li>
+                        <li onClick={handelClose} className='icon'><RxCross2 /></li>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about'>About Us</Link></li>
                         <li><Link to='/services'>Services</Link></li>
