@@ -1,7 +1,6 @@
 import React from 'react'
 import './Navbar.css'
 import { FaBars } from "react-icons/fa";
-import { ImCross } from "react-icons/im";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 

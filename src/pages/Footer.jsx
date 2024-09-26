@@ -59,7 +59,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="containerf">
+      <div className="containerf" style={{
+        padding:'50px'
+      }}>
         <ul className="foote_bottom_ul_amrc">
           <li><a href=" ">Home</a></li>
           <li><a href=" ">About</a></li>
