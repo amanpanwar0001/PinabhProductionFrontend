@@ -1,355 +1,200 @@
- .line_animate{
+ /* Line animation container */
+.line_animate {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height:10vh ;
- }
- 
- .line{
+  min-height: 10vh;
+}
+
+/* Default line style for larger screens */
+.line {
   width: 60rem;
   height: 0.5rem;
   background-color: #df1529;
   animation: animate 2s linear infinite alternate;
- }
- @keyframes animate {
-  0%{
+}
+
+/* Keyframes for line animation */
+@keyframes animate {
+  0% {
     transform: scaleX(0);
     transform-origin: left;
   }
-30%{
+  30% {
     transform: scaleX(1);
     transform-origin: left;
   }
-  50%{
+  50% {
     transform: scaleX(1);
     transform-origin: right;
   }
-  100%{
+  100% {
     transform: scaleX(0);
     transform-origin: right;
   }
-  
- }
-/**
-* Template Name: Restaurantly
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+}
+
+/* Adjustments for medium-sized tablets */
+@media (max-width: 768px) {
+  .line {
+    width: 30rem; /* Adjust line width for tablets */
+    height: 0.3rem; /* Reduce line height */
+  }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 480px) {
+  .line {
+    width: 20rem; /* Narrower line for phones */
+    height: 0.2rem; /* Smaller line height */
+  }
+}
 
 /*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
+# Global Styling (from existing code)
 --------------------------------------------------------------*/
-/* Fonts */
+
+/* General font and color variables */
 :root {
-      --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      --heading-font: "Playfair Display",  sans-serif;
-      --nav-font: "Poppins",  sans-serif;
-    }
-    
-    /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-    :root { 
-      --background-color: #0c0b09; /* Background color for the entire website, including individual sections */
-      --default-color: rgba(255, 255, 255, 0.7); /* Default color used for the majority of the text content across the entire website */
-      --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-      --accent-color: rgba(229,9,20,255); /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-      --surface-color: #29261f; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-      --contrast-color: #0c0b09; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
-    }
-    
-   
-    
-    
-    /* Smooth scroll */
-    :root {
-      scroll-behavior: smooth;
-    }
-    
-    /*--------------------------------------------------------------
-    # General Styling & Shared Classes
-    --------------------------------------------------------------*/
-    body {
-      color: var(--default-color);
-      background-color: var(--background-color);
-      font-family: var(--default-font);
-    }
-    
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    
-    a:hover {
-      color: color-mix(in srgb, var(--accent-color), transparent 25%);
-      text-decoration: none;
-    }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: var(--heading-color);
-      font-family: var(--heading-font);
-    }
-    
-   
-    
-    /* Pulsating Play Button
-    ------------------------------*/
-    .pulsating-play-btn {
-      width: 94px;
-      height: 94px;
-      background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
-      border-radius: 50%;
-      display: block;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .pulsating-play-btn:before {
-      content: "";
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      animation-delay: 0s;
-      animation: pulsate-play-btn 2s;
-      animation-direction: forwards;
-      animation-iteration-count: infinite;
-      animation-timing-function: steps;
-      opacity: 1;
-      border-radius: 50%;
-      border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
-      top: -15%;
-      left: -15%;
-      background: rgba(198, 16, 0, 0);
-    }
-    
-    .pulsating-play-btn:after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-40%) translateY(-50%);
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 15px solid #fff;
-      z-index: 100;
-      transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-    
-    .pulsating-play-btn:hover:before {
-      content: "";
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translateX(-40%) translateY(-50%);
-      width: 0;
-      height: 0;
-      border: none;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 15px solid #fff;
-      z-index: 200;
-      animation: none;
-      border-radius: 0;
-    }
-    
-    .pulsating-play-btn:hover:after {
-      border-left: 15px solid var(--accent-color);
-      transform: scale(20);
-    }
-    
-    @keyframes pulsate-play-btn {
-      0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
-      }
-    
-      100% {
-        transform: scale(1, 1);
-        opacity: 0;
-      }
-    }
-    
-    
-    /*--------------------------------------------------------------
-    # Preloader
-    --------------------------------------------------------------*/
-    #preloader {
-      position: fixed;
-      inset: 0;
-      z-index: 999999;
-      overflow: hidden;
-      background: var(--background-color);
-      transition: all 0.6s ease-out;
-    }
-    
-    #preloader:before {
-      content: "";
-      position: fixed;
-      top: calc(50% - 30px);
-      left: calc(50% - 30px);
-      border: 6px solid #ffffff;
-      border-color: var(--accent-color) transparent var(--accent-color) transparent;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: animate-preloader 1.5s linear infinite;
-    }
-    
-    @keyframes animate-preloader {
-      0% {
-        transform: rotate(0deg);
-      }
-    
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    
-    
-    
-    /*--------------------------------------------------------------
-    # Hero Section
-    --------------------------------------------------------------*/
-    .hero {
-      width: 100%;
-      min-height: 100vh;
-      position: relative;
-      padding: 80px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--default-color);
-    }
-    
-    .hero img {
-      position: absolute;
-      inset: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: 1;
-    }
-    
-    .hero:before {
-      content: "";
-      background: color-mix(in srgb, var(--background-color), transparent 50%);
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-    }
-    
-    .hero .container {
-      position: relative;
-      z-index: 3;
-    }
-    
-    .hero h2 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 700;
-    }
-    
-    .hero h2 span {
-      color: var(--accent-color);
-    }
-    
-    .hero p {
-      color: color-mix(in srgb, var(--default-color), transparent 20%);
-      margin: 10px 0 0 0;
-      font-size: 24px;
-    }
-    
-    .hero .cta-btn {
-      color: var(--default-color);
-      border: 2px solid var(--accent-color);
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      display: inline-block;
-      padding: 8px 30px;
-      border-radius: 50px;
-      transition: 0.3s;
-      flex-shrink: 0;
-    }
-    
-    .hero .cta-btn:first-child {
-      margin-right: 10px;
-    }
-    
-    .hero .cta-btn:hover {
-      background: color-mix(in srgb, var(--accent-color), transparent 20%);
-    }
-    
-    @media (max-width: 768px) {
-      .hero h2 {
-        font-size: 32px;
-      }
-    
-      .hero p {
-        font-size: 18px;
-      }
-    
-      .about .content h3 {
-        font-size: 1.5rem;
-      }
-    
-      .about .content p {
-        font-size: 1rem;
-      }
-    
-      .line {
-        width: 30rem;
-        height: 0.3rem;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .hero h2 {
-        font-size: 24px;
-      }
-    
-      .hero p {
-        font-size: 16px;
-      }
-    
-      .about .content h3 {
-        font-size: 1.25rem;
-      }
-    
-      .about .content p {
-        font-size: 0.9rem;
-      }
-    
-      .line {
-        width: 20rem;
-        height: 0.2rem;
-      }
-    
-      .pulsating-play-btn {
-        width: 60px;
-        height: 60px;
-      }
-    
-      .pulsating-play-btn:before {
-      
-        width: 80px;
-        height: 80px;
-      }
-      }
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Playfair Display", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 
+  --background-color: #0c0b09;
+  --default-color: rgba(255, 255, 255, 0.7);
+  --heading-color: #ffffff;
+  --accent-color: rgba(229, 9, 20, 255);
+  --surface-color: #29261f;
+  --contrast-color: #0c0b09;
+}
 
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-color);
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero h2 span {
+  color: var(--accent-color);
+}
+
+.hero p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+.hero .cta-btn {
+  color: var(--default-color);
+  border: 2px solid var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.hero .cta-btn:first-child {
+  margin-right: 10px;
+}
+
+.hero .cta-btn:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/*--------------------------------------------------------------
+# Responsive Breakpoints
+--------------------------------------------------------------*/
+
+/* Responsive for Tablets */
 @media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 30rem; /* Adjust line width for tablets */
+    height: 0.3rem;
+  }
+
   .about .content h3 {
     font-size: 1.5rem;
   }
@@ -357,40 +202,29 @@
   .about .content p {
     font-size: 1rem;
   }
-
-  .line {
-    width: 30rem;
-    height: 0.3rem;
-  }
-
-  .img-fluid {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
+/* Responsive for Mobile Phones */
 @media (max-width: 480px) {
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .line {
+    width: 20rem; /* Adjust line width for phones */
+    height: 0.2rem; /* Smaller line height */
+  }
+
   .about .content h3 {
     font-size: 1.25rem;
   }
 
   .about .content p {
     font-size: 0.9rem;
-  }
-
-  .line {
-    width: 20rem;
-    height: 0.2rem;
-  }
-
-  .pulsating-play-btn {
-    width: 60px;
-    height: 60px;
-  }
-
-  .pulsating-play-btn:before {
-    width: 80px;
-    height: 80px;
   }
 
   /* Reduce padding and margins for mobile */

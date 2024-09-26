@@ -1,0 +1,38 @@
+ .image-video{
+      display: flex;
+      justify-content: center;
+      
+ }
+
+ .ru1 { 
+     text-align: center;
+     color: white;
+     text-transform: uppercase;
+     padding: 1px;
+     /* margin: 50px; */
+     font-weight: 100;
+     /* position: relative; */
+     background: linear-gradient(to right, black, #eee, black);
+   }
+   
+   .ru1 a {
+     background: black;
+     display: block;
+     padding: 20px;
+     text-decoration: none;
+     letter-spacing: 30px;
+     color: white;
+   }
+
+
+   @media screen and (max-width: 768px) {
+    .image-video > div {
+      flex-basis: calc(100% / 2 - 40px); /* 2 columns for tablets */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-video > div {
+      flex-basis: 100%; /* 1 column for phones */
+    }
+  }

@@ -16,7 +16,7 @@ const News = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('https://pinabh-productionbackend.onrender.com/api/news');
+      const response = await axios.get('http://localhost:5001/api/news');
       setNewsItems(response.data);
     } catch (error) {
       console.error('Error fetching news:', error);
@@ -26,7 +26,7 @@ const News = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('https://pinabh-productionbackend.onrender.com/api/news', { title, content });
+      await axios.post('http://localhost:5001/api/news', { title, content });
       setTitle('');
       setContent('');
       setShowViewButton(true);
@@ -38,7 +38,7 @@ const News = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://pinabh-productionbackend.onrender.com/api/news/${id}`);
+      await axios.delete(`http://localhost:5001/api/news/${id}`);
       fetchNews(); // Refresh the list after deletion
     } catch (error) {
       console.error('Error deleting news:', error);

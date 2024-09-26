@@ -13,7 +13,7 @@ const NewsList = () => {
 
   const fetchNews = async () => {
     try {
-      const response = await axios.get('https://pinabh-productionbackend.onrender.com/api/news');
+      const response = await axios.get('http://localhost:5001/api/news');
       setNewsItems(response.data);
     } catch (error) {
       console.error('Error fetching news:', error);
@@ -35,17 +35,13 @@ const NewsList = () => {
             <div class="blob1"></div>
             <div class="blob2"></div>
             <div class="inner" style={{
-                width:"70vw",
-                
+                width:"70vw",     
                 fontWeight:"bolder"
               }} key={item.id}>
               <h2 >{item.title}</h2>
               <i>{item.content}</i>
             </div>
           </div>
-            
-            
-            
           ))}
         </ul>
       ) : (

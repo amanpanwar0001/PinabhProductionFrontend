@@ -42,7 +42,7 @@ const Dashboard = () => {
                   marginTop:"20px"
 
             }}>Movie Zone</h1>
-            <Link to="/video"><button id="bt" style={{
+            <Link to="/addimages"><button id="bt" style={{
                   padding:"20px",
                   borderRadius:"10px"
             }}>Add Movies</button></Link>

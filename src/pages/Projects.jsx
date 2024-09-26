@@ -139,7 +139,7 @@ const Projects = () => {
             <h3
               style={{
                 backgroundColor: "red",
-                height: "10vh",
+                height: "8vh",
                 borderTopLeftRadius: "20px",
                 borderTopRightRadius: "20px",
                 textAlign:"center",
@@ -147,7 +147,7 @@ const Projects = () => {
                 padding:"15px"
 
               }}
-            >Dheeraj</h3>
+            >Upcoming....</h3>
           </div>
           <div
             className="box2"
@@ -165,7 +165,7 @@ const Projects = () => {
 
 
               }}
-            >Abhishek</h3>
+            >Upcoming....</h3>
           </div>
         </div>
         <Footer />

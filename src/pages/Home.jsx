@@ -11,12 +11,14 @@ import About_Section_1 from './About_Section_1';
 import About_section2 from './About_section_2';
 import Footer from './Footer';
 import NewsList from './NewsList';
-import Videolist from './Videolist';
+import Mediagallery from './Mediagallery';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
     <>
-      <div className="carousel-container">
+    {/* <Navbar /> */}
+      <div className="carousel-container" >
         <Carousel interval={3000}>
           <Carousel.Item>
             <img
@@ -68,7 +70,7 @@ const Home = () => {
       <About_section2 />
       
       <NewsList/>
-      <Videolist/>
+      <Mediagallery/>
       
 
       <Footer />

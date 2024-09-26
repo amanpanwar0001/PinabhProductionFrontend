@@ -15,7 +15,7 @@ const Admin = () => {
     setSuccessMessage(''); // Reset success message
 
     try {
-      const response = await fetch('https://pinabh-productionbackend.onrender.com/api/login', {
+      const response = await fetch('http://localhost:5001/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
