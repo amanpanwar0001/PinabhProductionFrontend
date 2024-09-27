@@ -34,7 +34,7 @@ const Herosection = () => {
         </div>
       </div>
       <div className='second' style={{display:"flex",gap:"50px",flexWrap:"wrap",justifyContent:"center"}}>
-            <div className="graph"style={{width:"50vw",textAlign:"center",padding:"30px"}}>
+            <div className="graph">
             <h3 style={{color:"red",textAlign:"center"}}>Welcome to the world of endless storytelling!
             </h3>
                   <p> At Pinabh Production House, we are passionate about bringing stories to life. Whether you're a film enthusiast, a web series buff, or someone who loves TV dramas, you've come to the right place. </p>
@@ -46,7 +46,7 @@ const Herosection = () => {
                  <span style={{color:"white"}}> Explore behind-the-scenes magic,</span>
               </li>
               <li>
-             <span style={{color:"white"}}>join us on a creative journey where imagination knows no bounds. Ready to be a part of something extraordinary? Whether you're looking to collaborate, get inspired,</span>
+             <span style={{color:"white"}}>Join us on a creative journey where imagination knows no bounds. Ready to be a part of something extraordinary? Whether you're looking to collaborate, get inspired,</span>
               </li>
             </ul>
            

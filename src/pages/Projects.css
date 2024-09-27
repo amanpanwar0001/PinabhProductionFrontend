@@ -1,103 +1,98 @@
+/* From Uiverse.io by marcelodolza */
 
-     .pro {
-      padding: 50px;
-      width: 100%;
-      overflow-x: hidden;
-  }
+.pcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 200px;
   
-  .section11 {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-  }
-  .heading11{
-    margin-top: 125px;
-  }
-  
-  .heading11 h1 {
-      font-size: 50px;
-      color: white;
-      font-weight: 700;
-      text-align: center; /* Center the heading */
-  }
-  
-  .slider-container11 {
-      width: 100%; /* Full width */
-      margin-top: 50px; /* Space between heading and slider */
-      /* margin-left: 100px; */
-  }
-  
-  .slider11 {
-      display: flex;
-      background-color: transparent; 
-    
-  }
-  
-  .slide11 {
-      /* text-align: center;  */
-      padding: 10px;
-      
-
-  }
-  
-  .content11 img {
-      height: 250px; /* Responsive height */
-      width: 250px;
-      text-align: center;
-      
-  }
-  
-  .content22 {
-      color: red;
-      font-size: 20px; /* Adjusted size for better visibility */
-      text-align: center;
-  }
-  .content22 i {
-    text-align: center;
-  }
-  
-  .section2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 40px; /* Space above section2 */
-  }
-  
-  .section2 h2 {
-      font-size: 70px;
-      color: white;
-  }
-
-  .box1{
-    
-      width: 25vw;
-      height: 50vh;
-      background-color: white;
-      border-top-left-radius: 20px;
-      border-top-right-radius: 20px;
-      border-radius:20px;
-  
-  }
-  .box2{
-    
-    width: 25vw;
-    height: 50vh;
-    background-color: white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-radius:20px;
-
 }
-  @media (max-width: 768px) {
-    .section22 {
-      flex-direction: column; /* Stack vertically */
-      align-items: center; /* Center align */
-    }
+
+.cardp {
+  width: 190px;
+  height: 254px;
+  background: #171717;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardp .contentp {
+  border-radius: 5px;
   
-    .section22 .box1, .box2 {
-      width: 65vw; /* Full width on mobile */
-      margin-bottom: 20px; /* Space between boxes */
-    }
+  background: #171717;
+  width: 186px;
+  height: 250px;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentp::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
+}
+
+.cardp:hover .contentp::before {
+  opacity: 1;
+}
+
+.cardp::before {
+  opacity: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 360px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #ff0000,
+    #ffffff,
+    transparent
+  );
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
+}
+
+.cardp:hover::before {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+.cardp::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 190px;
+  height: 254px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
+}
+
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
   }
-  
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
