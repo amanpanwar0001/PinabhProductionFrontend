@@ -1,0 +1,41 @@
+/* app.css */
+:root {
+      --primary: #fea116;
+      --light: #f1f8ff;
+      --dark: #0f172b;
+    }
+    
+    .ff-secondary {
+      font-family: 'Pacifico', cursive;
+    }
+    
+    .fw-medium {
+      font-weight: 600 !important;
+    }
+    
+    .fw-semi-bold {
+      font-weight: 700 !important;
+    }
+    
+    .back-to-top {
+      position: fixed;
+      display: none;
+      right: 45px;
+      bottom: 45px;
+      z-index: 99;
+    }
+    
+    
+    /*** Hero Header ***/
+    .hero-header {
+      background: linear-gradient(rgba(64, 23, 42, 0.274), rgba(43, 15, 26, 0.9)),
+        url('images/img1.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .graph{
+      background-color: rgba(191, 45, 62, 0.274);
+    }
+    
