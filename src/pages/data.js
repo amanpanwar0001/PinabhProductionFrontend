@@ -48,7 +48,7 @@ Website:www.pinabhfilms.com`
       {
         id: 2,
         smallDescription:"   We specialize in creating engaging TV serials and web series tha captivate audiences. Our process covers everything fromstoryboarding and scriptwriting to casting, shooting, and post-production. We work closely with you to ensure your visiontranslates into compelling and entertaining content.",
-        title: "Tv serials and Web series",
+        title: "TV serials and Web series",
         imagesrc:"images/simg7.jpg",
         headdescription:"Service Details for Producing TV Serials and Web Series by Pinabh Production House",
         title1:"1. Pre-Production",
