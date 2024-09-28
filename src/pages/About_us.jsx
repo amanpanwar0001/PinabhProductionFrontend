@@ -18,11 +18,9 @@ const About_us = () => {
         }}
       />
       <div className="background-image">
-        <div className="top" style={{marginTop:"10px"}}>
-          <h2 style={{marginTop:"50px"}}>
-            Our <span>Story</span>
-          </h2>
-        </div>
+            <div className="hed3">
+      <h3 className='ru4'> <a href="">Our story</a> </h3>
+      </div>
         <div className="content1">
         <div className="right">
             <img src="images/img1.jpg" alt="" />

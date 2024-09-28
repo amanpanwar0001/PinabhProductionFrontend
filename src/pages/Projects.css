@@ -6,7 +6,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   
 }
 
@@ -86,7 +86,44 @@
   background: #17171733;
   backdrop-filter: blur(50px);
 }
+.contentp img{
+  width:186px;
+  height: 250px;
+}
+.hed{
+  text-align: center;
+  padding-top: 100px;
+ 
+}
+ 
 
+.ru3 { 
+  text-align: center;
+  color: gold;
+  text-transform: uppercase;
+  padding: 1px;
+  margin: 50px;
+  font-weight: 100;
+  position: relative;
+  background: linear-gradient(to right, black, red, black);
+}
+.ru3 a {
+  background: black;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  letter-spacing: 10px;
+  color: white;
+  /* color: gold; */
+
+  font-size: 25px;
+}
+.ft{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:50px;
+}
 @keyframes rotation_9018 {
   0% {
     transform: rotate(0deg);
@@ -94,5 +131,20 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .cardp{
+    width: 100%;
+  }
+  .cardp .contentp{
+    width: 100%;
+  }
+  .contentp img{
+    width: 100%;
+  }
+  .cen{
+    text-align: center;
   }
 }

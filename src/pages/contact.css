@@ -1,15 +1,4 @@
- .containerA{
-	padding: 30px;
- }
 
-.containerA p {
-	font-size: 40px;
-	 
-    }
-    
-    .containerA h2 {
-	color: red;
-    }
     .contactA {
 	background-color: black;
 	
@@ -89,4 +78,31 @@
 	border: 1px solid white;
 	color: white;
     }
+    .hed5{
+      text-align: center;
+      /* padding-top: 100px; */
+     
+    }
+     
     
+    .ru5{ 
+      text-align: center;
+      color: gold;
+      text-transform: uppercase;
+      padding: 1px;
+      margin: 50px;
+      font-weight: 100;
+      position: relative;
+      background: linear-gradient(to right, black, red, black);
+    }
+    .ru5 a {
+      background: black;
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      letter-spacing: 10px;
+      color: white;
+      /* color: gold; */
+    
+      font-size: 25px;
+    }

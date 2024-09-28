@@ -56,10 +56,13 @@ const Contact = () => {
     <>
       <div>
         <section id="contact" className="contactA section">
-          <div id="txt" className="containerA section-title">
+          {/* <div id="txt" className="containerA section-title">
             <h2 style={{marginTop:"20px"}}>Contact </h2>
             <p>Contact Us</p>
-          </div>
+          </div> */}
+             <div className="hed5">
+      <h3 className='ru5'> <a href="">Contact Us</a> </h3>
+      </div>
 
           <div className="mb-5">
             <iframe
