@@ -24,7 +24,14 @@ const Navbar = () => {
             <nav>
                   
                   <div className="logo">
-                  <img src="images/changeLogo.png" alt="pph" />  
+                    <div style={{
+                      padding:"5px"
+                    }}>
+                    <img src="images/changeLogo.png" alt="pph" style={{
+                    padding:"5px"
+                  }} /> 
+                    </div>
+                   
             <pre className='pinabh'>
               {" "}
               <span className="title">Pinabh</span> <span id='middle'>Production</span>{" "}

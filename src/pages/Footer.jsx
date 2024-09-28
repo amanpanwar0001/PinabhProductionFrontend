@@ -50,6 +50,7 @@ const Footer = () => {
               <li><a href=" ">Writters</a></li>
               <li><a href=" ">Music and videos</a></li>
               <li><a href=" ">Castings</a></li>
+              <li><a href="https://inext-it-solutions-menu.vercel.app/" target='_blank'>Menu</a></li>
             </ul>
           </div>
 

@@ -93,7 +93,7 @@ const Projects = () => {
       <div className="ft">
       <div class="cardp" id="cardp">
             <div class="contentp">
-              <p style={{color:"red"}}>Upcoming...</p>
+            <p style={{color:"red"}}>Upcoming...</p>
             </div>
           </div>
           <div class="cardp" id="cardp">

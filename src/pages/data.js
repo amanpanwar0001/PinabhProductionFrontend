@@ -1,3 +1,4 @@
+ 
  export const items = [
       {
         id: 1,
@@ -124,7 +125,9 @@ Quality Control: Ensure that all deliverables meet industry standards and client
 Post-Release Support: Offer ongoing support for any issues or additional needs following the release of the video or commercial.
 Contact Information: To discuss your corporate video or commercial project, please contact:
 
-We look forward to helping you create impactful and effective corporate videos and commercials.`
+We look forward to helping you create impactful and effective corporate videos and commercials.`,
+
+
       },
       {
         id: 4,

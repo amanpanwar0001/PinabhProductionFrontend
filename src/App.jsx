@@ -14,6 +14,7 @@ import News from "./pages/News";
 import NewsList from "./pages/NewsList";
 import AddImages from "./pages/AddImages";
 import Mediagallery from "./pages/Mediagallery";
+// import PrcingCalculator from "./pages/PrcingCalculator";
 
 function App() {
   return (
