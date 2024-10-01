@@ -56,8 +56,11 @@ const Services_details = () => {
         <p>{serviceDetail[0].subtitle7}</p>
         <h4>{serviceDetail[0].title8}</h4>
         <p>{serviceDetail[0].subtitle8}</p>
+        <div className='bn'>
         <Link to ='/contact'>
         <button id="AB">Lets connect...!</button></Link>
+        <button id="ABC"><a id="an" href="https://inext-it-solutions-menu.vercel.app/" target='_blank'>Menu</a></button>
+        </div>
         </div>
     
       </div>

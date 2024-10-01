@@ -30,7 +30,7 @@ const Footer = () => {
             <h5 className="headin5_amrc col_white_amrc pt2">Company</h5>
             <ul className="footer_ul_amrc">
               <li><a href=" ">About PPH</a></li>
-              <li><a href=" ">Carerrs</a></li>
+              <li><a href=" ">Carrers</a></li>
               <li><a href=" ">Advertising</a></li>
               <li><a href=" ">Help/Faqs</a></li>
               <li><a href=" ">Newsroom</a></li>

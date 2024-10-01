@@ -36,7 +36,7 @@ const About_Section_1 = () => {
                 </p>
               </div>
               <div className="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
-                <a href="videos/youtube-video.mp4" className="glightbox pulsating-play-btn"></a>
+                <a href="https://youtu.be/hPXVHBsJWVM?si=NkUCIgXmMCzQkfaD" className="glightbox pulsating-play-btn"></a>
               </div>
             </div>
           </div>

@@ -25,21 +25,18 @@
       color: #fff; 
       text-align: left; 
    }
-  /* #AB{
-     
-    padding: 12px;
-    border-radius: 15px;
-    margin-left: 270px;
-    cursor: pointer;
-  }
-  #AB:hover{
-    background-color: red;
-  }  */
+   
+ 
     /* Default Styles for larger screens */
+    .bn{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 #AB {
     padding: 12px;
     border-radius: 15px;
-    margin-left: 270px; /* Adjust this as needed for your layout */
+    /* margin-left: 270px;  */
     cursor: pointer;
     background-color: #f0f0f0; /* Set a default background color */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
@@ -47,6 +44,22 @@
 
 #AB:hover {
     background-color: red; /* Change background color on hover */
+}
+#ABC {
+    padding: 12px;
+    border-radius: 15px;
+    /* margin-left: 270px;  */
+    cursor: pointer;
+    background-color: #f0f0f0; /* Set a default background color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#ABC:hover {
+    background-color: red; /* Change background color on hover */
+    color:white;
+}
+#an{
+    color: black;
 }
 
 /* Responsive Styles for mobile screens */
@@ -57,10 +70,22 @@
         padding: 10px; /* Adjust padding for smaller screens */
         font-size: 14px; /* Optional: adjust font size for smaller screens */
     }
+    #ABC {
+        margin-left: 10px; /* Reduce left margin */
+        margin-right: 10px; /* Add right margin for better alignment */
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Optional: adjust font size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) { /* Target screens smaller than 480px (mobile) */
     #AB {
+        margin-left: 5px; /* Further reduce left margin for very small screens */
+        margin-right: 5px; /* Further adjust right margin */
+        padding: 8px; /* Reduce padding for very small screens */
+        font-size: 12px; /* Optional: adjust font size for very small screens */
+    }
+    #ABC {
         margin-left: 5px; /* Further reduce left margin for very small screens */
         margin-right: 5px; /* Further adjust right margin */
         padding: 8px; /* Reduce padding for very small screens */
